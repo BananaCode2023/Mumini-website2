@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/maternity-clinic/css/navbar.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="/assets/Mumini-logo.png" alt="Logo" width="150px" height="auto"></a>
+    </div>
+    <div class="login">
+      <button><a href="login.html">Log In</a></button>
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="heading-wrapper">
+    <div class="heading1-container">
+      <h2>Welcome to Our Maternity Clinic
+      </h2>
+      <p>We are dedicated to providing exceptional care to expectant mothers</p>
+    </div>
+    </div>
+
+    <div class="heading2-container">
+      <h2>Patient Registration
+      </h2>
+      <p>Please fill out the form below to begin your clinical care process:</p>
+    </div>
+
+  <form>
+    <div class="first-column">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder=" Input name">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Age:</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Input age">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Contact Details:</label>
+        <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Input email address">
+        <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="+63 123 4567 890">
+        <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Input address"> 
+      </div>
+      </div>
+    
+      <div class="second-column">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Medical History:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Example: Highblood, Asthma, Allergies to medicines, etc."></textarea>
+        </div>
+        <legend class="col-form-label col-sm-2 pt-0">Are you new here?</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              No
+            </label>
+          </div>
+      </div><br>
+      <button id="submit-button">Submit</button>
+      </div>
+  </form>
+  </main>
+  <footer>
+    <!--Footer-->
+    <p>&copy; 2023 Maternity Clinic. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>

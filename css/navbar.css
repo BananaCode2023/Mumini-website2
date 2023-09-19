@@ -1,0 +1,49 @@
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+  }
+ 
+  
+  .logo img {
+    height: 50px; /* Adjust the height as needed */
+  }
+  
+  .login button {
+    padding: 8px 16px;
+    background-color: #ff75c4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .login a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .login button:hover {
+    background-color: #fab9de;
+    color: #b30d6b;
+    
+  }
+  
+  .content {
+    /* Add margin or padding to your content to prevent it from being covered by the navbar */
+    margin-top: 60px; /* Adjust as needed */
+  }
+
+  footer {
+  text-align: center;
+  padding: 5px 0;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+  }

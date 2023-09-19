@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body id="login-body">
+	<nav class="navbar">
+	<!--Navbar-->
+		<div class="logo">
+			<a href="index.html"><img src="/assets/Mumini-logo.png" alt="Logo" width="150px" height="auto"></a>
+		</div>
+		<div class="login">
+			<button><a href="modal.html">Log In</a></button>
+		</div>
+	</nav>
+
+	<section>
+		<div class="login-container">
+			<div class="login-header">
+				<h1>USER LOGIN</h1>
+			</div>
+			<form class="login_form" action="index.html" method="post" name="form" onsubmit="return validated()">
+			
+			<div class="font"><strong>Email</strong>
+				<input autocomplete="off" type="email" name="email">
+			<div id="email_error">Please fill up your Email</div>
+			</div>
+
+			<div class="font font2"><strong>Password</strong>
+				<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			</div>
+
+			<button type="submit" id="login_button">LOGIN</button>
+
+
+			</div>
+			</form>
+		</div>
+	</section>
+
+
+  <footer>
+    <!--Footer-->
+    <p>&copy; 2023 Maternity Clinic. All rights reserved.</p>
+  </footer>
+
+	<script src="loginform.js"></script>
+</body>
+</html>

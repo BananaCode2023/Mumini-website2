@@ -1,0 +1,121 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+    margin-left: 30px;
+    justify-content: left;
+
+}
+
+#tooltip {
+    position: relative;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: sans-serif;
+    background-color: #FFF0F9;
+}
+
+.datatips {
+    position: relative;
+    color: #000;
+    font-size: inherit;
+    text-decoration: none;
+    background-color: #fff;
+
+}
+
+.datatips:after {
+    position: absolute;
+    width: 13em;
+    background-color: gray;
+    content: attr(data-tip);
+    padding: 0.6em 0;
+    color: #fff;
+    margin: auto;
+    left: -1em;
+    right: 0;
+    bottom: 1.5em;
+    text-align: center;
+    border-radius: 0.2em;
+}
+
+.datatips:before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 0.5em solid gray;
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 1em;
+}
+
+.datatips:before,
+.datatips:after {
+    display: none;
+}
+
+.datatips:hover:before,
+.datatips:hover:after {
+    display: block;
+}
+
+.flex {
+    position: absolute;
+    display: inline-block;
+    border: #000 solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    left: 90%;
+    top: -5vh;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 25px;
+    margin-left: 10%;
+    background-color: #fff;
+}
+
+.flex1 {
+    position: absolute;
+    display: inline-block;
+    border: #000 solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    left: 50vh;
+    top: -5vh;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 25px;
+    background-color: #fff;
+}
+
+.flex h3,
+.datalist,
+.data1 {
+    background-color: #fff;
+}
+
+.flex1 h3,
+.datalist,
+.data1 {
+    background-color: #fff;
+}
+
+.h1-registration {
+    position: absolute;
+    top: 20vh;
+}
+
+/* .h1-registration h1,
+p {
+    background-color: #FFF0F9;
+} */

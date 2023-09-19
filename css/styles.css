@@ -1,0 +1,20 @@
+/* background-color: #FFF0F9; Background color of the website*/
+/* background-color: #FF75C4; Background color of the modal*/
+/* color: #2E2E2E; font color*/
+/* font-family: 'Source Sans 3', sans-serif; */
+@import url(navbar.css);
+@import url(record.css);
+@import url(hero.css);
+@import url(modal.css);
+@import url(modal-signup.css);
+@import url(appointment.css);
+@import url(login.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #FFF0F9; */
+  font-family: 'Source Sans 3', sans-serif;
+}
+

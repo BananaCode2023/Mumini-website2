@@ -1,0 +1,55 @@
+.heading1-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.heading1-container p{
+ background-color: white;
+}
+.heading2-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.heading2-container p{
+  background-color: white;
+ }
+form{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.first-column{
+ width: 100%;
+ padding-inline: 100px;
+}
+.second-column{
+  width: 100%;
+  padding-right: 100px;
+}
+#submit-button{
+  background-color: #FF75C4;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  padding: 8px 40px;
+}
+#formGroupExampleInput1{
+  margin-block: 5px;
+}
+form textarea{
+  resize: none;
+}
+main{
+  display: flex;
+  flex-direction: column;
+}
+.heading-wrapper{
+  display: block;
+  position: relative;
+  text-align: left;
+}

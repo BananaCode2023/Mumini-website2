@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <section>
+    <!--Insert nalang yung modal-->
+    <button onclick="document.getElementById('id01').style.display='block'" class="modal-button" style="width:auto;">Log In</button>
+
+<div id="id01" class="modal">
+  <form class="modal-content modal-animate" action="/action_page.php" method="post">
+    <div class="modal-container">
+      <span onclick="document.getElementById('id01').style.display='none'" class="modal-close" title="Close Modal">&times;</span>
+    </div>
+
+    <div>
+      <h2 style="text-align: center;">Login to Mumini Maternity Clinic</h2>
+    </div>
+
+    <div class="modal-container">
+      <input type="radio" id="admin" name="category" value="ADMIN">
+       <label for="admin">Admin</label>
+
+      <input type="radio" id="patient" name="category" value="PATIENT">
+       <label for="admin">Patient</label><br> <br>
+
+
+      <label for="uname"><b> Email or Username</b></label>
+      <input type="text"  name="uname" required class="modal-input">
+    
+      <label for="psw"><b>Password (<a href="#" class="modal-link"> Forgot password?</a>)</span></b></label>
+      <input type="password" name="psw" required class="modal-input">
+    
+      <button type="submit" class="modal-button"><strong> Log in</strong></button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    
+
+    <div class="modal-container" style="background-color:#FF75C4">
+     <p style=" text-align: center;">New User? <a href="http://127.0.0.1:5500/html/modal-signup.html#" class="login-link"><strong>Sign Up</strong></a> Now</p>
+    </div>
+
+  </form>
+</div>
+  
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+  </script>
+  </section>
+
+</body>
+</html>
