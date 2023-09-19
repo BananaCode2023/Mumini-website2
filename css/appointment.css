@@ -53,3 +53,8 @@ main{
   position: relative;
   text-align: left;
 }
+
+.name-container{
+  color: red;
+  
+}

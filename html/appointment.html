@@ -41,20 +41,24 @@
       <p>Please fill out the form below to begin your clinical care process:</p>
     </div>
 
-  <form>
+  <form action="POST" >
     <div class="first-column">
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Name:</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder=" Input name">
+        <input type="text" class="form-control" id="form_name" placeholder=" Input name" required>
+        <p class="name-container" id="invalid_name"></p>
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">Age:</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Input age">
+        <input type="number" class="form-control" id="form_age"  placeholder="Input age">
+        <p class="name-container" id="invalid_age"></p>
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Contact Details:</label>
-        <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Input email address">
-        <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="+63 123 4567 890">
+        <input id="form_email" type="text" class="form-control" placeholder="Input email address">
+        <p class="name-container" id="invalid_email"></p>
+        <input type="number" class="form-control" id="form_contact_number" placeholder="Phone Number">
+        <p class="name-container" id="invalid_contact_number"></p>
         <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Input address"> 
       </div>
       </div>
@@ -89,6 +93,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="appointment.js"></script>
 </body>
 
 </html>
