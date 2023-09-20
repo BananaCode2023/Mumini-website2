@@ -52,3 +52,20 @@ function validate_email() {
 		document.getElementById("invalid_email").innerText = "The email is invalid"
 	}
 }
+
+function validate_submit(event) {
+
+	const existing_emails = ["melmariee@gmail.com"];
+	const email = document.getElementById("form_email").value;
+
+	if (existing_emails.includes(email)){
+		document.getElementById("invalid_email").innerText = "This email is already exist"
+	}
+	event.preventDefault(); // So that it will stop submit
+
+	const existing_numbers = ["09190093704"]
+	const contact_number =  document.getElementById("form_contact_number").value;
+	if (existing_numbers.includes(contact_number)){
+		document.getElementById("invalid_contact_number").innerText = "This Phone number has already been used."
+	}
+}
