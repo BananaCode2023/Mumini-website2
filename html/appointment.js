@@ -9,7 +9,7 @@ function validate_name() {
 
 	const form_name = document.getElementById("form_name")
 	for (let i =0; i < form_name.value.length; i++) {
-		if (!isNaN(form_name.value[i])) {
+		if (Number(form_name.value[i])) {
 			document.getElementById("invalid_name").innerText = "Invalid name there should be no number"
 		}
 	}
@@ -20,16 +20,7 @@ function validate_age() {
 	document.getElementById("invalid_age").innerText = ""; // Reset
 
 	const age = Number(document.getElementById("form_age").value);
-	if (age >= 70) {
-		document.getElementById("invalid_age").innerText = "We dont support this age."
-	}
-}
-
-function validate_age() {
-	document.getElementById("invalid_age").innerText = ""; // Reset
-
-	const age = Number(document.getElementById("form_age").value);
-	if (age >= 70) {
+	if (age >= 70 || age <= 5 ) {
 		document.getElementById("invalid_age").innerText = "We dont support this age."
 	}
 }
@@ -55,7 +46,7 @@ function validate_email() {
 
 function validate_submit(event) {
 
-	const existing_emails = ["melmariee@gmail.com"];
+	const existing_emails = ["melmariee@gmail.com","peter.john.reyes0326@gmail.com","zeenauy@gmail.com"];
 	const email = document.getElementById("form_email").value;
 
 	if (existing_emails.includes(email)){
@@ -63,7 +54,7 @@ function validate_submit(event) {
 	}
 	event.preventDefault(); // So that it will stop submit
 
-	const existing_numbers = ["09190093704"]
+	const existing_numbers = ["09190093704","12345678910","12312312312"]
 	const contact_number =  document.getElementById("form_contact_number").value;
 	if (existing_numbers.includes(contact_number)){
 		document.getElementById("invalid_contact_number").innerText = "This Phone number has already been used."

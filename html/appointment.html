@@ -50,14 +50,14 @@
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">Age:</label>
-        <input type="number" class="form-control" id="form_age"  placeholder="Input age">
-        <p class="name-container" id="invalid_age"></p>
+        <input type="number" class="form-control" id="form_age"  placeholder="Input age" min="1" max="70" value="18" required>
+        <p class="name-container" id="invalid_age" ></p>
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Contact Details:</label>
-        <input id="form_email" type="text" class="form-control" placeholder="Input email address">
+        <input id="form_email" type="text" class="form-control" placeholder="Input email address" required>
         <p class="name-container" id="invalid_email"></p>
-        <input type="number" class="form-control" id="form_contact_number" placeholder="Phone Number">
+        <input type="number" class="form-control" id="form_contact_number" placeholder="Phone Number" required>
         <p class="name-container" id="invalid_contact_number"></p>
         <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Input address"> 
       </div>
